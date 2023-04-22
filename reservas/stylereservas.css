@@ -1,0 +1,280 @@
+/* Comun para todos los dispositivos */
+
+* {
+    font-family: 'Roboto' sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    /* background-image: url('/imagenes/imagenRestaurante.jpg'); */
+
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    justify-content: center;
+
+}
+
+.header {
+    background: white;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo img {
+    align-self: self-start;
+    max-width: 85px;
+}
+
+
+.plano {
+    background-image: url("imagenes/plano2.jpg");
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    border-radius: 5%;
+}
+
+
+.map {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+.iconInfo>* {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+
+}
+
+.iconInfo>*>p {
+    margin-left: 15px;
+}
+
+.white {
+    color: white;
+    align-items: initial;
+}
+
+@media (max-width: 799px) {
+
+    .navbar {
+        display: none;
+    }
+
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10% 10px 10%;
+        max-width: 1400px;
+        min-width: none;
+    }
+    .white {
+        font-size: 1.4rem;
+    }
+
+    .formulario>*>* {
+        display: flex;
+        flex-direction: column;
+        min-width: 325px;
+
+        width: 100%;
+        margin-top: 5px;
+
+        padding: 5px;
+    }
+    .boton-info  {
+
+        font-size: 0.7rem;
+    }
+    .boton-info > * {
+        align-items: center;
+        text-align: center;
+        max-width: 325px;
+        font-size: 1.1rem;
+    }
+    .central2 {
+        margin-bottom: 50px;
+    }
+    .map {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .imagen {
+        display: flex;
+        min-height: 325px;
+        min-width: 325px;
+        width: 100%;
+        border-radius: 50%;
+
+    }
+
+    .footer {
+        background: black;
+        grid-area: footer;
+    }
+
+    .navFooter {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+        
+
+    }
+
+    .icononav {
+        height: 40px;
+        display: flex;
+    }
+    
+
+    .iconInfo>* {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .iconInfo>*>p {
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .header {
+        position: fixed;
+        top: 0;
+        
+    }
+    .main{
+        margin-top: 150px;
+    }
+
+    .logo img {
+        align-self: self-start;
+        max-width: 105px;
+    }
+
+    .navbar {
+        display: flex;
+        width: 65%;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .navbar>a {
+        color: black;
+        text-decoration-line: none;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 200px;
+    }
+    
+    .central1,
+    .central2 {
+        display: flex;
+        justify-content: center;
+        width: 50%;    
+    }
+   
+
+    .plano {
+        width: 60%;
+    }
+
+    .imagen {
+
+        display: flex;
+        min-height: 400px;
+        min-width: 400px;
+
+        max-width: 1500px;
+        width: 100%;
+        border-radius: 50%;
+
+    }
+
+    .formulario {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        
+    }
+
+    .nomPer,
+    .telFech {
+        width: 50%;
+        
+    }
+    .nomPer > input, .telFech > input{
+        min-width:130px;
+        
+        
+    }
+    select {
+        
+        min-width: 130px;
+        width: 170px;
+        font-size: 1.1rem;
+
+        
+
+
+    }
+    .boton-info > input{
+        align-items: end;
+        font-size: 1.1rem;
+    }
+
+    .boton-info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin-right: 18%;
+       
+    }
+
+    .boton-info > p {
+        display: flex;
+        justify-content: center;
+        font-size: 0.8rem;
+        align-self: center;
+
+    }
+
+    .formulario>*>* {
+        display: flex;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-top: 5px;
+    }
+
+    .formulario>*> :not(.white) {
+        justify-content: center;
+    }
+
+    .footer {
+        display: none;
+    }
+}
